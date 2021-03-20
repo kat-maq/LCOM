@@ -1,0 +1,29 @@
+#ifndef I8042_H
+#define I8042_H
+
+#define KEYBOARD_IRQ 1
+
+#define OUTPUT_BUFFER 0X60
+#define OUTPUT_BUFFER_FULL 0x01
+
+#define STATUS_REGISTER 0x64
+
+#define PARITY BIT(7)
+#define TIMEOUT BIT(6)
+#define AUX BIT(5)
+
+#define MSB_ACTIVATED BIT(7)
+#define TWO_BYTES_SCANCODE 0xE0
+
+#define ESC_BREAK_CODE 0x81
+#define ESC_MAKE_CODE 0x01
+
+#define KBC_COMMAND_REG 0x64
+#define READ_COMMAND_BYTE 0x20
+#define WRITE_COMMAND_BYTE 0x60
+
+#define MOUSE_COMMAND 0xD4
+#define ENABLE_DATA_REPORTING 0xF4
+#define DISABLE_DATA_REPORTING 0xF5
+
+#endif
